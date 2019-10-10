@@ -12,7 +12,7 @@ import java.util.TreeMap;
  *
  * @author Boris
  */
-public class ChargeUndefinedGalaxianTherms {
+public class ChargeUndefinedGalaxianTherms { //Clase que para cargar los valores galacticos indefinidos
       private Map<String, Double> map = new TreeMap<String, Double>();
 
     public ChargeUndefinedGalaxianTherms() {  //{Gold=14450.0, Iron=195.5, Silver=17.0}

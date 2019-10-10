@@ -48,7 +48,7 @@ public class Principal extends javax.swing.JFrame {
         evaluationInput = new javax.swing.JTextField();
         evaluateResult = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        calculateGalacticaNumbers = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -62,17 +62,17 @@ public class Principal extends javax.swing.JFrame {
         romanInput = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         romanResult = new javax.swing.JTextField();
-        Calculate = new javax.swing.JButton();
+        calculateRomanGalactic = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         arabicInput = new javax.swing.JTextField();
         arabicResult = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        calculateArabicRoman = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Copy and paste in the box.. one by one, the following Inputs");
+        jLabel1.setText("Write the following options in the box.. one by one, for evaluation");
 
         jLabel2.setText("3.  glob prok Gold");
 
@@ -94,10 +94,10 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel7.setText("RESULT");
 
-        jButton1.setText("Evaluate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        calculateGalacticaNumbers.setText("Evaluate");
+        calculateGalacticaNumbers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                calculateGalacticaNumbersActionPerformed(evt);
             }
         });
 
@@ -126,7 +126,7 @@ public class Principal extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                     .addGap(26, 26, 26)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton1)
+                                        .addComponent(calculateGalacticaNumbers)
                                         .addComponent(evaluationInput, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addContainerGap(123, Short.MAX_VALUE))
         );
@@ -152,7 +152,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(evaluateResult, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(calculateGalacticaNumbers)
                 .addGap(51, 51, 51))
         );
 
@@ -180,10 +180,10 @@ public class Principal extends javax.swing.JFrame {
 
         romanResult.setEditable(false);
 
-        Calculate.setText("Calculate");
-        Calculate.addActionListener(new java.awt.event.ActionListener() {
+        calculateRomanGalactic.setText("Calculate");
+        calculateRomanGalactic.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CalculateActionPerformed(evt);
+                calculateRomanGalacticActionPerformed(evt);
             }
         });
 
@@ -217,7 +217,7 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(romanResult, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(215, 215, 215)
-                        .addComponent(Calculate)))
+                        .addComponent(calculateRomanGalactic)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -248,7 +248,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(jLabel17)
                     .addComponent(romanResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(51, 51, 51)
-                .addComponent(Calculate)
+                .addComponent(calculateRomanGalactic)
                 .addContainerGap(60, Short.MAX_VALUE))
         );
 
@@ -266,10 +266,10 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel19.setText("Result");
 
-        jButton2.setText("Calculate");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        calculateArabicRoman.setText("Calculate");
+        calculateArabicRoman.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                calculateArabicRomanActionPerformed(evt);
             }
         });
 
@@ -290,7 +290,7 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(arabicResult, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(209, 209, 209)
-                        .addComponent(jButton2)))
+                        .addComponent(calculateArabicRoman)))
                 .addContainerGap(144, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -305,7 +305,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(arabicResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19))
                 .addGap(65, 65, 65)
-                .addComponent(jButton2)
+                .addComponent(calculateArabicRoman)
                 .addContainerGap(94, Short.MAX_VALUE))
         );
 
@@ -329,24 +329,30 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_evaluationInputActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void calculateGalacticaNumbersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateGalacticaNumbersActionPerformed
         // TODO add your handling code here:
 
         String galaxyValue = this.evaluationInput.getText();
         String galaxyValueToProcess = "";
         double undefinedThermsValues = 0;
         boolean stringValidator = false;
+        
+        /*Se llaman instancian a las clases pertinentes*/
         ChargeGalaxianTherms chargeGalaxianTherms = new ChargeGalaxianTherms();
         ChargeUndefinedGalaxianTherms chargeUndefinedGalaxianTherms = new ChargeUndefinedGalaxianTherms();
         Map<String, String> mapGalaxianTherms = new TreeMap<String, String>();
         Map<String, Double> mapUndefinedTherms = new TreeMap<String, Double>();
 
+        
+        /*Se transforma a mayusculas los caracteres ingresados*/
         galaxyValue = galaxyValue.toUpperCase();
         System.out.println(galaxyValue.toUpperCase());
 
         String[] datos = galaxyValue.split(" ");
         mapGalaxianTherms = chargeGalaxianTherms.getMap();
         mapUndefinedTherms = chargeUndefinedGalaxianTherms.getMap();
+        
+        /*Se procesa el String caracter a caracter*/
         for (String item : datos) {
             if (mapGalaxianTherms.containsKey(item)) {
                 galaxyValueToProcess += mapGalaxianTherms.get(item);
@@ -362,6 +368,7 @@ public class Principal extends javax.swing.JFrame {
                 }
             }
         }
+        /*Espacio para mostrar los resultados del ejercicio 1*/
         if (stringValidator) {
             ValidateGalaxianNumber validateGalaxianNumber = new ValidateGalaxianNumber(galaxyValueToProcess);
             if (validateGalaxianNumber.isGalaxianNumber()) {
@@ -373,31 +380,34 @@ public class Principal extends javax.swing.JFrame {
             }
 
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_calculateGalacticaNumbersActionPerformed
 
-    private void CalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateActionPerformed
+    private void calculateRomanGalacticActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateRomanGalacticActionPerformed
+        
         String romanGalaxyValue = this.romanInput.getText();
         romanGalaxyValue = romanGalaxyValue.toUpperCase();
+        
+        /*instancia a la clase que nos permit saber si lo ingresado pertenece a un numero glactico conocido*/
         ValidateGalaxianNumber validateGalaxianNumber = new ValidateGalaxianNumber(romanGalaxyValue);
         if (validateGalaxianNumber.isGalaxianNumber()) {
             ProcessGalaxianNumber processGalaxianNumber = new ProcessGalaxianNumber(romanGalaxyValue);
-            romanResult.setText("" + processGalaxianNumber.calculateEarthNotation());
+            romanResult.setText("" + processGalaxianNumber.calculateEarthNotation());  //Imprime los resultados
         } else {
             JOptionPane.showMessageDialog(null, "ERROR", "error", HEIGHT);
         }
-    }//GEN-LAST:event_CalculateActionPerformed
+    }//GEN-LAST:event_calculateRomanGalacticActionPerformed
 
     private void arabicInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arabicInputActionPerformed
         // TODO add your handling code here:
 
     }//GEN-LAST:event_arabicInputActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void calculateArabicRomanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateArabicRomanActionPerformed
         // TODO add your handling code here:
         int arabicNumber = 0;
         boolean validatorInmput = false;
         try {
-            arabicNumber = Integer.parseInt(arabicInput.getText());
+            arabicNumber = Integer.parseInt(arabicInput.getText()); //Permite verificar que lo ingresado sea solo numeros
             validatorInmput = true;
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Ingrese Solo Numeros", "error", HEIGHT);
@@ -405,9 +415,9 @@ public class Principal extends javax.swing.JFrame {
         }
         if (validatorInmput) {
             RomanNumbers romanNumbers = new RomanNumbers();
-            arabicResult.setText(""+romanNumbers.convertToRomanNumber(arabicNumber));
+            arabicResult.setText(""+romanNumbers.convertToRomanNumber(arabicNumber)); //Muestra el resultado
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_calculateArabicRomanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -445,13 +455,13 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Calculate;
     private javax.swing.JTextField arabicInput;
     private javax.swing.JTextField arabicResult;
+    private javax.swing.JButton calculateArabicRoman;
+    private javax.swing.JButton calculateGalacticaNumbers;
+    private javax.swing.JButton calculateRomanGalactic;
     private javax.swing.JTextField evaluateResult;
     private javax.swing.JTextField evaluationInput;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

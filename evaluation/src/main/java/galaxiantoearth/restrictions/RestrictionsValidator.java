@@ -14,12 +14,13 @@ import dao.numbers.Galaxian;
  *
  * @author Boris
  */
-public class RestrictionsValidator extends Galaxian {
+public class RestrictionsValidator extends Galaxian {  /*Clase que valida las restricciones*/
 
     private char[] galaxyValueVector;
     private ChargeGalaxianValues chargeGalaxianValues = new ChargeGalaxianValues();
     private Map<String, Double> map;
 
+    /*Cargamos los datos al map y al vector de valores calacticos para procesamiento*/
     public RestrictionsValidator(String galaxyValue) {
         this.map = this.chargeGalaxianValues.setGalaxianValues();
         this.galaxyValueVector = galaxyValue.toCharArray(); //setea elString ingresado como un vector de caracteres uno a uno
@@ -72,7 +73,7 @@ public class RestrictionsValidator extends Galaxian {
             }
         }
         if (iCounter > 3 || xCounter > 3 || cCounter > 3 || mCounter > 3) {
-            returnValidateGalaxianNumber = fourIncidences();
+            returnValidateGalaxianNumber = fourIncidences();   //metodo para validad que sea posible mas de 4 incidencias del mismo caracter
         } else {
             returnValidateGalaxianNumber = true;
         }
@@ -114,7 +115,7 @@ public class RestrictionsValidator extends Galaxian {
     }
 
     //**********************************************************
-    public boolean fourIncidences() {
+    public boolean fourIncidences() {   //metodo para validad que sea posible mas de 4 incidencias del mismo caracter
         boolean returnValidateGalaxianNumber = true;
         int counter = 0;
 
@@ -135,7 +136,7 @@ public class RestrictionsValidator extends Galaxian {
     }
 
 
-    public boolean validateFourIncidences(int i, boolean returnValidateGalaxianNumber) {
+    public boolean validateFourIncidences(int i, boolean returnValidateGalaxianNumber) { //metodo para verificar que se cumpla la condición de 4 incidencias de los caracteres I;X;C;M
 
         if ((i + 4) < this.galaxyValueVector.length && (i + 3) < this.galaxyValueVector.length
                 && (this.galaxyValueVector[i] == this.galaxyValueVector[i + 1])

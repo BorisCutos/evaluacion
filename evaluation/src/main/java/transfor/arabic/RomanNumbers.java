@@ -9,7 +9,7 @@ package transfor.arabic;
  *
  * @author Boris
  */
-public class RomanNumbers {
+public class RomanNumbers { //clase para convertir numeros arabigos a romanos
     public static String convertToRomanNumber(int arabicNumber) {
       int i, thousands, hundred, tens, units;
       String romanNumber = "";

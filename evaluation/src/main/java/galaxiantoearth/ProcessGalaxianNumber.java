@@ -19,13 +19,16 @@ public class ProcessGalaxianNumber extends Galaxian {
     private ChargeGalaxianValues chargeGalaxianValues = new ChargeGalaxianValues();
     private Map<String, Double> map;
 
+    
+    //Carga los valores ingresados por el usuario al map y al vector de valores galácticos
     public ProcessGalaxianNumber(String galaxyValue) {
         this.map = this.chargeGalaxianValues.setGalaxianValues();
         this.galaxyValueVector = galaxyValue.toCharArray(); //setea elString ingresado como un vector de caracteres uno a uno
         this.setMap(this.map);
         this.map = getMap();
     }
-
+    
+    /*método que permite el computo de los valores galacticos ingresados devolviendo el valor en numeros arabigos*/
     public double calculateEarthNotation() {
         double numberInEarthNotation = 0;
         char vectorGalaxyCharacter = ' ';
@@ -37,7 +40,7 @@ public class ProcessGalaxianNumber extends Galaxian {
             } else {
                 vectorGalaxyCharacter = this.galaxyValueVector[vectorGalaxiValueWalker];
                 switch (vectorGalaxyCharacter) {
-                    case 'I':
+                    case 'I':  //condiciones para los caracteres en las restricciones del problema
 
                         if (this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'V' || this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'X') {
                             numberInEarthNotation -= this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
@@ -46,27 +49,27 @@ public class ProcessGalaxianNumber extends Galaxian {
                         }
 
                         break;
-                    case 'X':
+                    case 'X'://condiciones para los caracteres en las restricciones del problema
                         if (this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'L' || this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'C') {
                             numberInEarthNotation -= this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
                         } else {
                             numberInEarthNotation += this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
                         }
                         break;
-                    case 'C':
+                    case 'C'://condiciones para los caracteres en las restricciones del problema
                         if (this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'D' || this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'M') {
                             numberInEarthNotation -= this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
                         } else {
                             numberInEarthNotation += this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
                         }
                         break;
-                    case 'V':
+                    case 'V'://condiciones para los caracteres en las restricciones del problema
                         numberInEarthNotation += this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
                         break;
-                    case 'L':
+                    case 'L'://condiciones para los caracteres en las restricciones del problema
                         numberInEarthNotation += this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
                         break;
-                    case 'D':
+                    case 'D'://condiciones para los caracteres en las restricciones del problema
                         numberInEarthNotation += this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
                         break;
                     default:

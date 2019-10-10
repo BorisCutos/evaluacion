@@ -13,7 +13,7 @@ import java.util.TreeMap;
  *
  * @author Boris
  */
-public class Galaxian {
+public class Galaxian { //Clase que permitela interaccón con los valores galacticos conocidos
     
     private  Map<String, Double> map = new TreeMap<String, Double>();
    

@@ -11,14 +11,14 @@ import galaxiantoearth.restrictions.RestrictionsValidator;
  *
  * @author Boris
  */
-public class ValidateGalaxianNumber {
+public class ValidateGalaxianNumber { //clase para validar las condiciones de que el los valores ingresados sea un numero galactico
 
     private RestrictionsValidator restrictionsValidator;
 
     public ValidateGalaxianNumber(String galaxyValue) {
         this.restrictionsValidator = new RestrictionsValidator(galaxyValue);
     }
-
+/*metodo que valida todas las condiciones para que un numero sea galactico*/
     public boolean isGalaxianNumber() {
         boolean returnGalaxianNumber = false;
         if (this.restrictionsValidator.validateGalaxianNumber()) {
