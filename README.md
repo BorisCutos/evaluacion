@@ -7,6 +7,8 @@ INFO:
 
 
 	The source code is in the attached  directory : "evaluation"
+	
+	The main class is the Frame "Principal" in "evaluation.Principal"
 
 	The program has an interface and tabs to navigate between the three options.
 
