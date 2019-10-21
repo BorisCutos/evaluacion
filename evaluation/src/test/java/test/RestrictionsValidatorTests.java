@@ -17,8 +17,26 @@ public class RestrictionsValidatorTests {
     
     @Test
     public void validateGalaxianNumberTest() {
-        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("kk");
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
          assertTrue(restrictionsValidator.validateGalaxianNumber());
+    }
+    
+    @Test
+    public void noMoreThreeTimeIncidencesTest() {
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
+         assertTrue(restrictionsValidator.noMoreThreeTimeIncidences());
+    }
+    
+    @Test
+    public void noMoreOneIncidencesTest() {
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
+         assertTrue(restrictionsValidator.noMoreOneIncidences());
+    }
+    
+    @Test
+    public void fourIncidencesTest() {
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
+         assertTrue(restrictionsValidator.fourIncidences());
     }
     
 }
