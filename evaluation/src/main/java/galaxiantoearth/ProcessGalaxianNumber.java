@@ -20,7 +20,9 @@ public class ProcessGalaxianNumber extends Galaxian {
     private Map<String, Double> map;
 
     
-    //Carga los valores ingresados por el usuario al map y al vector de valores galácticos
+    /**
+     * Carga los valores ingresados por el usuario al map y al vector de valores galácticos
+     */
     public ProcessGalaxianNumber(String galaxyValue) {
         this.map = this.chargeGalaxianValues.setGalaxianValues();
         this.galaxyValueVector = galaxyValue.toCharArray(); //setea elString ingresado como un vector de caracteres uno a uno
@@ -28,7 +30,9 @@ public class ProcessGalaxianNumber extends Galaxian {
         this.map = getMap();
     }
     
-    /*método que permite el computo de los valores galacticos ingresados devolviendo el valor en numeros arabigos*/
+    /*
+    método que permite el computo de los valores galacticos ingresados devolviendo el valor en numeros arabigos
+    */
     public double calculateEarthNotation() {
         double numberInEarthNotation = 0;
         char vectorGalaxyCharacter = ' ';
@@ -39,8 +43,9 @@ public class ProcessGalaxianNumber extends Galaxian {
                 numberInEarthNotation = this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));
             } else {
                 vectorGalaxyCharacter = this.galaxyValueVector[vectorGalaxiValueWalker];
+                //condiciones para los caracteres en las restricciones del problema
                 switch (vectorGalaxyCharacter) {
-                    case 'I':  //condiciones para los caracteres en las restricciones del problema
+                    case 'I':  
 
                         if (this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'V' || this.galaxyValueVector[vectorGalaxiValueWalker + 1] == 'X') {
                             numberInEarthNotation -= this.map.get(Character.toString(this.galaxyValueVector[vectorGalaxiValueWalker]));

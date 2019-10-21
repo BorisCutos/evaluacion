@@ -391,7 +391,7 @@ public class Principal extends javax.swing.JFrame {
         ValidateGalaxianNumber validateGalaxianNumber = new ValidateGalaxianNumber(romanGalaxyValue);
         if (validateGalaxianNumber.isGalaxianNumber()) {
             ProcessGalaxianNumber processGalaxianNumber = new ProcessGalaxianNumber(romanGalaxyValue);
-            romanResult.setText(Double.toString(processGalaxianNumber.calculateEarthNotation()));  //Imprime los resultados
+            romanResult.setText(Double.toString(processGalaxianNumber.calculateEarthNotation()));  
         } else {
             JOptionPane.showMessageDialog(null, "ERROR", "error", HEIGHT);
         }
@@ -407,7 +407,8 @@ public class Principal extends javax.swing.JFrame {
         int arabicNumber = 0;
         boolean validatorInmput = false;
         try {
-            arabicNumber = Integer.parseInt(arabicInput.getText()); //Permite verificar que lo ingresado sea solo numeros
+            //Permite verificar que lo ingresado sea solo numeros
+            arabicNumber = Integer.parseInt(arabicInput.getText()); 
             validatorInmput = true;
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Ingrese Solo Numeros", "error", HEIGHT);
@@ -415,7 +416,8 @@ public class Principal extends javax.swing.JFrame {
         }
         if (validatorInmput) {
             RomanNumbers romanNumbers = new RomanNumbers();
-            arabicResult.setText((String)romanNumbers.convertToRomanNumber(arabicNumber)); //Muestra el resultado
+            //Muestra el resultado
+            arabicResult.setText((String)romanNumbers.convertToRomanNumber(arabicNumber)); 
         }
     }//GEN-LAST:event_calculateArabicRomanActionPerformed
 

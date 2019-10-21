@@ -14,7 +14,11 @@ import dao.numbers.Galaxian;
  *
  * @author Boris
  */
-public class ChargeGalaxianValues { //Clase que setea los valores de los números galacticos romanos conocidos
+
+/**
+ *Clase que setea los valores de los números galacticos romanos conocidos
+ */
+public class ChargeGalaxianValues { 
     private Map<String, Double> map = new TreeMap<String, Double>();
 
     public Map setGalaxianValues() {  

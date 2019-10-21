@@ -11,8 +11,13 @@ import java.util.TreeMap;
 /**
  *
  * @author Boris
+ * 
  */
-public class ChargeGalaxianTherms {  //Clase que setea los valores de las palabras galacticas conocidas
+
+/**
+ *Clase que setea los valores de las palabras galacticas conocidas
+ */
+public class ChargeGalaxianTherms {  
 
     private Map<String, String> map = new TreeMap<String, String>();
 

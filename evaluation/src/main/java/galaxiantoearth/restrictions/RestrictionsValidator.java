@@ -14,21 +14,31 @@ import dao.numbers.Galaxian;
  *
  * @author Boris
  */
-public class RestrictionsValidator extends Galaxian {  /*Clase que valida las restricciones*/
+
+/*
+Clase que valida las restricciones
+*/
+public class RestrictionsValidator extends Galaxian {  
 
     private char[] galaxyValueVector;
     private ChargeGalaxianValues chargeGalaxianValues = new ChargeGalaxianValues();
     private Map<String, Double> map;
 
-    /*Cargamos los datos al map y al vector de valores calacticos para procesamiento*/
+    /*
+    Cargamos los datos al map y al vector de valores calacticos para procesamiento
+    */
     public RestrictionsValidator(String galaxyValue) {
         this.map = this.chargeGalaxianValues.setGalaxianValues();
-        this.galaxyValueVector = galaxyValue.toCharArray(); //setea elString ingresado como un vector de caracteres uno a uno
+         //setea elString ingresado como un vector de caracteres uno a uno
+        this.galaxyValueVector = galaxyValue.toCharArray();
         this.setMap(this.map);
         this.map = getMap();
     }
-
-    public boolean validateGalaxianNumber() { //METODO PARA VALIDAR SI EL NUMERO GALACTICO ES CORRECTO 
+/**
+ * METODO PARA VALIDAR SI EL NUMERO GALACTICO ES CORRECTO 
+ *  
+ */
+    public boolean validateGalaxianNumber() { 
         boolean returnValidateGalaxianNumber = false;
         for (int vectorGalaxiValueWalker = 0; vectorGalaxiValueWalker
                 < (this.galaxyValueVector.length); vectorGalaxiValueWalker++) {
@@ -42,8 +52,11 @@ public class RestrictionsValidator extends Galaxian {  /*Clase que valida las re
         return returnValidateGalaxianNumber;
     }
 
-    //**************************
-    public boolean noMoreThreeTimeIncidences() {//Validar que no haya mas de tres repeticiones "I", "X", "C", and "M" 
+    /**
+     * 
+     * Validar que no haya mas de tres repeticiones "I", "X", "C", and "M"
+     */
+    public boolean noMoreThreeTimeIncidences() { 
         int iCounter = 0;
         int xCounter = 0;
         int cCounter = 0;
@@ -72,8 +85,10 @@ public class RestrictionsValidator extends Galaxian {  /*Clase que valida las re
                 }
             }
         }
+        
+        //metodo para validad que sea posible mas de 4 incidencias del mismo caracter
         if (iCounter > 3 || xCounter > 3 || cCounter > 3 || mCounter > 3) {
-            returnValidateGalaxianNumber = fourIncidences();   //metodo para validad que sea posible mas de 4 incidencias del mismo caracter
+            returnValidateGalaxianNumber = fourIncidences();   
         } else {
             returnValidateGalaxianNumber = true;
         }
@@ -81,8 +96,10 @@ public class RestrictionsValidator extends Galaxian {  /*Clase que valida las re
         return returnValidateGalaxianNumber;
     }
 
-    //****************************************************************************
-    public boolean noMoreOneIncidences() {//Validar que no haya mas de tres repeticiones "D", "L", and "V" 
+    /**
+     * Validar que no haya mas de tres repeticiones "D", "L", and "V"  
+     */
+    public boolean noMoreOneIncidences() {
         int dCounter = 0;
         int lCounter = 0;
         int vCounter = 0;
@@ -114,8 +131,10 @@ public class RestrictionsValidator extends Galaxian {  /*Clase que valida las re
         return returnValidateGalaxianNumber;
     }
 
-    //**********************************************************
-    public boolean fourIncidences() {   //metodo para validad que sea posible mas de 4 incidencias del mismo caracter
+    /**
+     * metodo para validad que sea posible mas de 4 incidencias del mismo caracter
+     */
+    public boolean fourIncidences() {   
         boolean returnValidateGalaxianNumber = true;
         int counter = 0;
 
@@ -135,8 +154,13 @@ public class RestrictionsValidator extends Galaxian {  /*Clase que valida las re
         return returnValidateGalaxianNumber;
     }
 
+    
+    /**
+     * metodo para verificar que se cumpla la condición de 4 incidencias de los caracteres I;X;C;M
+     * 
+     */
 
-    public boolean validateFourIncidences(int i, boolean returnValidateGalaxianNumber) { //metodo para verificar que se cumpla la condición de 4 incidencias de los caracteres I;X;C;M
+    public boolean validateFourIncidences(int i, boolean returnValidateGalaxianNumber) { 
 
         if ((i + 4) < this.galaxyValueVector.length && (i + 3) < this.galaxyValueVector.length
                 && (this.galaxyValueVector[i] == this.galaxyValueVector[i + 1])
