@@ -28,11 +28,10 @@ public class ValidateGalaxianNumber {
  */
     public boolean isGalaxianNumber() {
         boolean returnGalaxianNumber = false;
-        if (this.restrictionsValidator.validateGalaxianNumber()) {
-            if (this.restrictionsValidator.noMoreThreeTimeIncidences()
-                    && this.restrictionsValidator.noMoreOneIncidences()) {
+        if (this.restrictionsValidator.validateGalaxianNumber()
+                && this.restrictionsValidator.noMoreThreeTimeIncidences()
+                && this.restrictionsValidator.noMoreOneIncidences()) {
                 returnGalaxianNumber = true;
-            }else returnGalaxianNumber = false;
         }
         return returnGalaxianNumber;
     }

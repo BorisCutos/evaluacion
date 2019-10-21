@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+package galaxiantoearth;
 
 import galaxiantoearth.ProcessGalaxianNumber;
 import static junit.framework.Assert.assertEquals;

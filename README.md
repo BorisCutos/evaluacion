@@ -6,7 +6,7 @@ INFO:
 	This program is compiled with Java 8, created in NETBEANS IDE and maven project.
 
 
-	The source code is in the attached  directory : "evaluation"
+	The source code is in the attached  directory : "evaluation" (inside of evaluacion)
 	
 	The main class is the Frame "Principal" in "evaluation.Principal"
 

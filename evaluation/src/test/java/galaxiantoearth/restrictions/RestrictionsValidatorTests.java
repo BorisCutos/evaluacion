@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+package galaxiantoearth.restrictions;
 
 import galaxiantoearth.restrictions.RestrictionsValidator;
 import static junit.framework.Assert.assertTrue;
@@ -17,25 +17,31 @@ public class RestrictionsValidatorTests {
     
     @Test
     public void validateGalaxianNumberTest() {
-        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("XVIII");
          assertTrue(restrictionsValidator.validateGalaxianNumber());
     }
     
     @Test
     public void noMoreThreeTimeIncidencesTest() {
-        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
+        //correcto XXXVI
+        //incorrecto XXXXVI
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("XXXVI");
          assertTrue(restrictionsValidator.noMoreThreeTimeIncidences());
     }
     
     @Test
     public void noMoreOneIncidencesTest() {
-        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
+        //correcto D,L,V
+        //incorrecto DD,LL,VV
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("DD");
          assertTrue(restrictionsValidator.noMoreOneIncidences());
     }
     
     @Test
     public void fourIncidencesTest() {
-        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("x");
+        //correcto XXXIX
+        //incorrecto XXXCM
+        RestrictionsValidator restrictionsValidator= new RestrictionsValidator("XXXCM");
          assertTrue(restrictionsValidator.fourIncidences());
     }
     
