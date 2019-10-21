@@ -37,52 +37,52 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        evaluationRomanArabicTabbedPane = new javax.swing.JTabbedPane();
+        evaluationPanel = new javax.swing.JPanel();
+        evaluationPrincipalMessage = new javax.swing.JLabel();
+        evaluationTirthOption = new javax.swing.JLabel();
+        evaluationFistOption = new javax.swing.JLabel();
+        evaluationFourOption = new javax.swing.JLabel();
+        evaluationSecondOption = new javax.swing.JLabel();
+        evaluationFiveOption = new javax.swing.JLabel();
         evaluationInput = new javax.swing.JTextField();
         evaluateResult = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        outputEvaluationText = new javax.swing.JLabel();
         calculateGalacticaNumbers = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        romanNumberRestriction = new javax.swing.JPanel();
+        romanPanelPrincipalMessage = new javax.swing.JLabel();
+        romanPanelSevenRestriction = new javax.swing.JLabel();
+        romanPanelSixsRestriction = new javax.swing.JLabel();
+        romanPanelFirstOption = new javax.swing.JLabel();
+        romanPanelTirhtRestriction = new javax.swing.JLabel();
+        romanPanelSecondRestriction = new javax.swing.JLabel();
+        romanPanelFourRestriction = new javax.swing.JLabel();
+        romanPanelFiveRestriction = new javax.swing.JLabel();
+        inputRomanText = new javax.swing.JLabel();
         romanInput = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
+        outputRomanText = new javax.swing.JLabel();
         romanResult = new javax.swing.JTextField();
         calculateRomanGalactic = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
+        arabicPane = new javax.swing.JPanel();
+        inputArabicText = new javax.swing.JLabel();
         arabicInput = new javax.swing.JTextField();
         arabicResult = new javax.swing.JTextField();
-        jLabel19 = new javax.swing.JLabel();
+        outputArabicText = new javax.swing.JLabel();
         calculateArabicRoman = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Write the following options in the box.. one by one, for evaluation");
+        evaluationPrincipalMessage.setText("Write the following options in the box.. one by one, for evaluation");
 
-        jLabel2.setText("3.  glob prok Gold");
+        evaluationTirthOption.setText("3.  glob prok Gold");
 
-        jLabel3.setText("1.  pish tegj glob glob ");
+        evaluationFistOption.setText("1.  pish tegj glob glob ");
 
-        jLabel4.setText("4.  glob prok Iron");
+        evaluationFourOption.setText("4.  glob prok Iron");
 
-        jLabel5.setText("2.  glob prok Silver");
+        evaluationSecondOption.setText("2.  glob prok Silver");
 
-        jLabel6.setText("5. how much wood could a woodchuck chuck if a woodchuck could chuck wood");
+        evaluationFiveOption.setText("5. how much wood could a woodchuck chuck if a woodchuck could chuck wood");
 
         evaluationInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +92,7 @@ public class Principal extends javax.swing.JFrame {
 
         evaluateResult.setEditable(false);
 
-        jLabel7.setText("RESULT");
+        outputEvaluationText.setText("RESULT");
 
         calculateGalacticaNumbers.setText("Evaluate");
         calculateGalacticaNumbers.addActionListener(new java.awt.event.ActionListener() {
@@ -101,82 +101,82 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout evaluationPanelLayout = new javax.swing.GroupLayout(evaluationPanel);
+        evaluationPanel.setLayout(evaluationPanelLayout);
+        evaluationPanelLayout.setHorizontalGroup(
+            evaluationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(evaluationPanelLayout.createSequentialGroup()
+                .addGroup(evaluationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(evaluationPanelLayout.createSequentialGroup()
                         .addGap(26, 26, 26)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(evaluationPrincipalMessage))
+                    .addGroup(evaluationPanelLayout.createSequentialGroup()
                         .addGap(56, 56, 56)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(evaluationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(evaluationTirthOption)
+                            .addComponent(evaluationFourOption)
+                            .addComponent(evaluationFistOption)
+                            .addComponent(evaluationSecondOption)
+                            .addComponent(evaluationFiveOption)
+                            .addGroup(evaluationPanelLayout.createSequentialGroup()
                                 .addGap(78, 78, 78)
-                                .addComponent(jLabel7))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(outputEvaluationText))
+                            .addGroup(evaluationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(evaluateResult, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, evaluationPanelLayout.createSequentialGroup()
                                     .addGap(26, 26, 26)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(evaluationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(calculateGalacticaNumbers)
                                         .addComponent(evaluationInput, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addContainerGap(123, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        evaluationPanelLayout.setVerticalGroup(
+            evaluationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(evaluationPanelLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel1)
+                .addComponent(evaluationPrincipalMessage)
                 .addGap(19, 19, 19)
-                .addComponent(jLabel3)
+                .addComponent(evaluationFistOption)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(evaluationSecondOption)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(evaluationTirthOption)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(evaluationFourOption)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(evaluationFiveOption)
                 .addGap(28, 28, 28)
                 .addComponent(evaluationInput, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(evaluationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(evaluateResult, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
+                    .addComponent(outputEvaluationText))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(calculateGalacticaNumbers)
                 .addGap(51, 51, 51))
         );
 
-        jTabbedPane1.addTab("EVALUATION", jPanel1);
+        evaluationRomanArabicTabbedPane.addTab("EVALUATION", evaluationPanel);
 
-        jLabel8.setText("RESTRICTIONS");
+        romanPanelPrincipalMessage.setText("RESTRICTIONS");
 
-        jLabel9.setText(" \"V\", \"L\", and \"D\" can never be subtracted");
+        romanPanelSevenRestriction.setText(" \"V\", \"L\", and \"D\" can never be subtracted");
 
-        jLabel10.setText(" \"C\" can be subtracted from \"D\" and \"M\" only");
+        romanPanelSixsRestriction.setText(" \"C\" can be subtracted from \"D\" and \"M\" only");
 
-        jLabel11.setText("\"I\", \"X\", \"C\", and \"M\" can be repeated three times in succession");
+        romanPanelFirstOption.setText("\"I\", \"X\", \"C\", and \"M\" can be repeated three times in succession");
 
-        jLabel12.setText("\"D\", \"L\", and \"V\" can never be repeated");
+        romanPanelTirhtRestriction.setText("\"D\", \"L\", and \"V\" can never be repeated");
 
-        jLabel13.setText("\"I\", \"X\", \"C\", and \"M\"They may appear four times if the third and fourth are separated by a smaller value ");
+        romanPanelSecondRestriction.setText("\"I\", \"X\", \"C\", and \"M\"They may appear four times if the third and fourth are separated by a smaller value ");
 
-        jLabel14.setText("\"I\" can be subtracted from \"V\" and \"X\" only");
+        romanPanelFourRestriction.setText("\"I\" can be subtracted from \"V\" and \"X\" only");
 
-        jLabel15.setText(" \"X\" can be subtracted from \"L\" and \"C\" only");
+        romanPanelFiveRestriction.setText(" \"X\" can be subtracted from \"L\" and \"C\" only");
 
-        jLabel16.setText("Enter your Roman Number");
+        inputRomanText.setText("Enter your Roman Number");
 
-        jLabel17.setText("Result");
+        outputRomanText.setText("Result");
 
         romanResult.setEditable(false);
 
@@ -187,74 +187,74 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout romanNumberRestrictionLayout = new javax.swing.GroupLayout(romanNumberRestriction);
+        romanNumberRestriction.setLayout(romanNumberRestrictionLayout);
+        romanNumberRestrictionLayout.setHorizontalGroup(
+            romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(romanNumberRestrictionLayout.createSequentialGroup()
+                .addGroup(romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(romanNumberRestrictionLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel8))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(romanPanelPrincipalMessage))
+                    .addGroup(romanNumberRestrictionLayout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel9)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(romanPanelFourRestriction)
+                            .addComponent(romanPanelFiveRestriction)
+                            .addComponent(romanPanelTirhtRestriction)
+                            .addComponent(romanPanelSecondRestriction)
+                            .addComponent(romanPanelSixsRestriction)
+                            .addComponent(romanPanelFirstOption)
+                            .addComponent(romanPanelSevenRestriction)))
+                    .addGroup(romanNumberRestrictionLayout.createSequentialGroup()
                         .addGap(75, 75, 75)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel16))
+                        .addGroup(romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(outputRomanText)
+                            .addComponent(inputRomanText))
                         .addGap(51, 51, 51)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(romanInput, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(romanResult, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGroup(romanNumberRestrictionLayout.createSequentialGroup()
                         .addGap(215, 215, 215)
                         .addComponent(calculateRomanGalactic)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        romanNumberRestrictionLayout.setVerticalGroup(
+            romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(romanNumberRestrictionLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8)
+                .addComponent(romanPanelPrincipalMessage)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel11)
+                .addComponent(romanPanelFirstOption)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13)
+                .addComponent(romanPanelSecondRestriction)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel12)
+                .addComponent(romanPanelTirhtRestriction)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel14)
+                .addComponent(romanPanelFourRestriction)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel15)
+                .addComponent(romanPanelFiveRestriction)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
+                .addComponent(romanPanelSixsRestriction)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
+                .addComponent(romanPanelSevenRestriction)
                 .addGap(25, 25, 25)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
+                .addGroup(romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inputRomanText)
                     .addComponent(romanInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
+                .addGroup(romanNumberRestrictionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(outputRomanText)
                     .addComponent(romanResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(51, 51, 51)
                 .addComponent(calculateRomanGalactic)
                 .addContainerGap(60, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("ROMAN NUMBERS", jPanel2);
+        evaluationRomanArabicTabbedPane.addTab("ROMAN NUMBERS", romanNumberRestriction);
 
-        jLabel18.setText("Enter an Arabic Number");
+        inputArabicText.setText("Enter an Arabic Number");
 
         arabicInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -264,7 +264,7 @@ public class Principal extends javax.swing.JFrame {
 
         arabicResult.setEditable(false);
 
-        jLabel19.setText("Result");
+        outputArabicText.setText("Result");
 
         calculateArabicRoman.setText("Calculate");
         calculateArabicRoman.addActionListener(new java.awt.event.ActionListener() {
@@ -273,53 +273,53 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout arabicPaneLayout = new javax.swing.GroupLayout(arabicPane);
+        arabicPane.setLayout(arabicPaneLayout);
+        arabicPaneLayout.setHorizontalGroup(
+            arabicPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(arabicPaneLayout.createSequentialGroup()
+                .addGroup(arabicPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(arabicPaneLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(arabicPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(outputArabicText, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(inputArabicText, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(68, 68, 68)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(arabicPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(arabicInput, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(arabicResult, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGroup(arabicPaneLayout.createSequentialGroup()
                         .addGap(209, 209, 209)
                         .addComponent(calculateArabicRoman)))
                 .addContainerGap(144, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        arabicPaneLayout.setVerticalGroup(
+            arabicPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(arabicPaneLayout.createSequentialGroup()
                 .addGap(91, 91, 91)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(arabicPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inputArabicText, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(arabicInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(70, 70, 70)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(arabicPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(arabicResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19))
+                    .addComponent(outputArabicText))
                 .addGap(65, 65, 65)
                 .addComponent(calculateArabicRoman)
                 .addContainerGap(94, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("ARABIC - ROMAN", jPanel3);
+        evaluationRomanArabicTabbedPane.addTab("ARABIC - ROMAN", arabicPane);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(evaluationRomanArabicTabbedPane)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(evaluationRomanArabicTabbedPane)
         );
 
         pack();
@@ -376,7 +376,7 @@ public class Principal extends javax.swing.JFrame {
                     undefinedThermsValues = 1;
                 }
                 ProcessGalaxianNumber processGalaxianNumber = new ProcessGalaxianNumber(galaxyValueToProcess);
-                evaluateResult.setText("" + undefinedThermsValues * processGalaxianNumber.calculateEarthNotation());
+                evaluateResult.setText(Double.toString( undefinedThermsValues * processGalaxianNumber.calculateEarthNotation()));
             }
 
         }
@@ -391,7 +391,7 @@ public class Principal extends javax.swing.JFrame {
         ValidateGalaxianNumber validateGalaxianNumber = new ValidateGalaxianNumber(romanGalaxyValue);
         if (validateGalaxianNumber.isGalaxianNumber()) {
             ProcessGalaxianNumber processGalaxianNumber = new ProcessGalaxianNumber(romanGalaxyValue);
-            romanResult.setText("" + processGalaxianNumber.calculateEarthNotation());  //Imprime los resultados
+            romanResult.setText(Double.toString(processGalaxianNumber.calculateEarthNotation()));  //Imprime los resultados
         } else {
             JOptionPane.showMessageDialog(null, "ERROR", "error", HEIGHT);
         }
@@ -415,7 +415,7 @@ public class Principal extends javax.swing.JFrame {
         }
         if (validatorInmput) {
             RomanNumbers romanNumbers = new RomanNumbers();
-            arabicResult.setText(""+romanNumbers.convertToRomanNumber(arabicNumber)); //Muestra el resultado
+            arabicResult.setText((String)romanNumbers.convertToRomanNumber(arabicNumber)); //Muestra el resultado
         }
     }//GEN-LAST:event_calculateArabicRomanActionPerformed
 
@@ -456,36 +456,36 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField arabicInput;
+    private javax.swing.JPanel arabicPane;
     private javax.swing.JTextField arabicResult;
     private javax.swing.JButton calculateArabicRoman;
     private javax.swing.JButton calculateGalacticaNumbers;
     private javax.swing.JButton calculateRomanGalactic;
     private javax.swing.JTextField evaluateResult;
+    private javax.swing.JLabel evaluationFistOption;
+    private javax.swing.JLabel evaluationFiveOption;
+    private javax.swing.JLabel evaluationFourOption;
     private javax.swing.JTextField evaluationInput;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JPanel evaluationPanel;
+    private javax.swing.JLabel evaluationPrincipalMessage;
+    private javax.swing.JTabbedPane evaluationRomanArabicTabbedPane;
+    private javax.swing.JLabel evaluationSecondOption;
+    private javax.swing.JLabel evaluationTirthOption;
+    private javax.swing.JLabel inputArabicText;
+    private javax.swing.JLabel inputRomanText;
+    private javax.swing.JLabel outputArabicText;
+    private javax.swing.JLabel outputEvaluationText;
+    private javax.swing.JLabel outputRomanText;
     private javax.swing.JTextField romanInput;
+    private javax.swing.JPanel romanNumberRestriction;
+    private javax.swing.JLabel romanPanelFirstOption;
+    private javax.swing.JLabel romanPanelFiveRestriction;
+    private javax.swing.JLabel romanPanelFourRestriction;
+    private javax.swing.JLabel romanPanelPrincipalMessage;
+    private javax.swing.JLabel romanPanelSecondRestriction;
+    private javax.swing.JLabel romanPanelSevenRestriction;
+    private javax.swing.JLabel romanPanelSixsRestriction;
+    private javax.swing.JLabel romanPanelTirhtRestriction;
     private javax.swing.JTextField romanResult;
     // End of variables declaration//GEN-END:variables
 }
